@@ -11,7 +11,7 @@ window.addEventListener("load", function(){
         <ul>
             <li>Hours in space: ${data[index].hoursInSpace}</li>
             <li class = "${data[index].active}"> Active: ${data[index].active}</li>
-            <li> Skills: ${data[index].skills}</li>
+            <li> Skills: ${data[index].skills.join (", ")}</li>
         </ul>
         </div>
         <img class = "avatar" src = ${data[index].picture}
